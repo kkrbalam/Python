@@ -1,0 +1,20 @@
+github tutorial:
+
+config:
+git config --global user.name "Krishna Balam"
+git config --global user.email "Krishna.Balam@Gmail.com"
+
+to clone an existing project from my git hub
+
+1. git clone https://github.com/kkrbalam/Python 
+
+2. Make necessary changes and add files to the cloned folder
+
+to add the folders to staging area
+3. git add . or git add * or git add filename
+
+commit the changes to the local repository
+4. git commit -m "message for commit"
+
+push the changes to the github repository
+5. git push origin master
