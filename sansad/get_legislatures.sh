@@ -60,7 +60,7 @@ check_retcode()
   
   #Temporary file for containing the mail message
 
-  TO="krushna.balam@gmail.com"
+  TO="krishna.balam@gmail.com"
   SUBJECT="${INTERFACE_NAME}: ${message} FAILED "
   
   if [[ "$ret_code_string" -ne "0" ]] 
