@@ -10,16 +10,16 @@ opens a lot of possibilities for informatica cloud.
 #Usage:
 
 ```python
-*usage: runInfaCloudTask.py [-h] [-v] -c CREDFILE -j JOBFILE -w WAITTIME*
+usage: runInfaCloudTask.py [-h] [-v] -c CREDFILE -j JOBFILE -w WAITTIME
 
-**optional arguments:**
- * -h, --help            show this help message and exit
- * -v, --verbose         allows prograss messages to be displayed
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --verbose         allows prograss messages to be displayed
   
-**required arguments:**
- * -c CREDFILE, --credFile CREDFILE  ( specifies credentails file name )
- * -j JOBFILE, --jobFile JOBFILE     ( specifies job information file )
- * -w WAITTIME, --waitTime WAITTIME  ( how many secs to wait while checking task status recursively)
+required arguments:
+  -c CREDFILE, --credFile CREDFILE  ( specifies credentails file name )
+  -j JOBFILE, --jobFile JOBFILE     ( specifies job information file )
+  -w WAITTIME, --waitTime WAITTIME  ( how many secs to wait while checking task status recursively)
 ```
 
 *See creadentials.properties for sample credentials file*
