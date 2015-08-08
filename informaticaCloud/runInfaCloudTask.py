@@ -165,6 +165,10 @@ def InfaRunJob(url, payload):
         # use urllib2 to form the request
         jobRequest = urllib2.Request(url, payloadEncoded)
         
+        # Uncomment this code for using proxy information
+        #opener = urllib2.build_opener(gl_proxy)
+        #urllib2.install_opener(opener) 
+        
         # Save job kick off time to a global variable for later use        
         kickoffTime = datetime.now(pytz.timezone('US/Pacific'))
         
@@ -217,7 +221,11 @@ def InfaJobStatus(url, payload, jobName):
         logUrl = url + '?' + payloadEncoded
         
         while True:
-
+            
+            # Uncomment this code for using proxy information
+            #opener = urllib2.build_opener(gl_proxy)
+            #urllib2.install_opener(opener)           
+            
             # open a handle for the API using urllib2 urlopen method
              
             logHandle = urllib2.urlopen(logUrl)
@@ -305,11 +313,16 @@ def main():
     global gl_login_url 
     global gl_runjob_url
     global gl_status_url
-       
+    # uncomment this statement for using proxy information
+    #global gl_proxy
     
     gl_login_url = "https://app.informaticaondemand.com/saas/api/1/login"
     gl_runjob_url = "https://app.informaticaondemand.com/saas/api/1/runjob"
     gl_status_url = "https://app.informaticaondemand.com/saas/api/1/activitylog"
+    
+    # uncomment this block for using proxy information
+    # gl_proxy = {'http': '127.0.0.1'}
+    # add any other attributes needed for proxy like port
     
     # Read credentails from credentials file from arguments parsed
     logging.info('Get Credentails')
