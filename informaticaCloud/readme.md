@@ -28,5 +28,5 @@ required arguments:
 
 See creadentials.properties for sample credentials file
 See sample_job.properties for sample job that you need to execute
-----------------------------------------------------------------------------------------------------------------------
+
 Please uncomment code that is below the comment "Uncomment this code for using proxy information" for using it with proxy settings
