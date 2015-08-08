@@ -6,9 +6,9 @@ mentioned.
 
 You can execute this python script as pre-session command or command task from informatica, you can call this from a shell script or power shell, which 
 opens a lot of possibilities for informatica cloud.
-----------------------------------------------------------------------------------------------------------------------
-usage:
 
+usage:
+----------------------------------------------------------------------------------------------------------------------
 ** usage: runInfaCloudTask.py [-h] [-v] -c CREDFILE -j JOBFILE -w WAITTIME
 
 Argument parser for informatica cloud run job... runInfaCloudTask
