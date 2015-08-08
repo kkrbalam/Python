@@ -7,8 +7,9 @@ mentioned.
 You can execute this python script as pre-session command or command task from informatica, you can call this from a shell script or power shell, which 
 opens a lot of possibilities for informatica cloud.
 
-#usage:
+#Usage:
 
+```python
 *usage: runInfaCloudTask.py [-h] [-v] -c CREDFILE -j JOBFILE -w WAITTIME*
 
 **optional arguments:**
@@ -19,6 +20,7 @@ opens a lot of possibilities for informatica cloud.
  * -c CREDFILE, --credFile CREDFILE  ( specifies credentails file name )
  * -j JOBFILE, --jobFile JOBFILE     ( specifies job information file )
  * -w WAITTIME, --waitTime WAITTIME  ( how many secs to wait while checking task status recursively)
+```
 
 *See creadentials.properties for sample credentials file*
 *See sample_job.properties for sample job that you need to execute*
