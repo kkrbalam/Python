@@ -1,3 +1,4 @@
+''' python
 ./reddit_news.py --help
 usage: reddit_news.py [-h] [-s SUBREDDIT] [-t NEWSTYPE] [-n HOWMANY]
                       [-a APPAGENTID]
